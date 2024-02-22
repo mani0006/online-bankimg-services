@@ -1,0 +1,35 @@
+﻿@model online_bankimg_services.Models.customerdata
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>newuserregister</title>
+</head>
+<body>
+    <div>
+        <form>
+
+            <h1>new user</h1>
+            <label for="name">First Name:</label> @Html.TextBoxFor(t => t.FirstName)<br /><br />
+
+            <label for="name">Last Name:</label>@Html.TextBoxFor(t => t.LastName)<br /><br />
+
+            <label for="phone">Phone:</label> @Html.TextBoxFor(t => t.Phnumber)<br /><br />
+
+            <label for="email">Email:</label> @Html.TextBoxFor(t => t.MailID)<br /><br />
+
+            <select id="Account Type" name="Account Type">
+                <option value="savings">Savings</option>
+                <option value="current">Current</option>
+                <option value="fixed">Fixed</option>
+            </select><br>
+            <input type="submit" value="create account" />
+        </form>
+    </div>
+</body>
+</html>
